@@ -1,4 +1,4 @@
-/* Question 3 */
+/* Answer 3 */
 class Circle {
   constructor(x = 0, y = 0, r = 0) {
     this.x = x;
@@ -22,7 +22,7 @@ const c1 = new Circle(3, 1, 2);
 const c2 = new Circle(1, 1, 1);
 console.log("isOverlappingCircles ---> ", c1.isOverlapping(c2));
 
-/* Question 4 */
+/* Answer 4 */
 class CircleStore {
   constructor() {
     this.store = [];

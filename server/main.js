@@ -1,4 +1,4 @@
-// Question 2
+// Answer 2
 const express = require("express");
 const bodyParser = require("body-parser");
 const fs = require("fs");
