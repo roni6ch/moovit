@@ -1,0 +1,105 @@
+<!--  Question 0 
+    My name is Roni Chabra
+    The date is: 17/04/2020
+-->
+
+<!--  Question 1 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Roni Chabra - Moovit Test</title>
+    <meta name="description" content="Moovit test" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrapper {
+        margin: 20px auto;
+        width: 400px;
+        border: 1px dashed;
+        padding: 20px;
+      }
+
+      .inputWrapper {
+        margin: 10px 0px;
+      }
+
+      input {
+        margin: 10px 0px;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+      }
+      label {
+        cursor: pointer;
+      }
+
+      input[type="checkbox"] {
+        width: 20px;
+      }
+
+      input[type="submit"] {
+        width: 55px;
+        border: 1px dashed;
+        font-size: 25px;
+      }
+      input[type="submit"]:hover {
+        background: #ccc;
+      }
+    </style>
+    <script src="myScript.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form method="POST" action="http://localhost:3000/submit" id="myForm">
+        <div class="inputWrapper">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value="John Mooviter"
+            onfocus="this.value=''"
+            required
+          />
+        </div>
+        <div class="inputWrapper">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value="you@mail.com"
+            onfocus="this.value=''"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+        </div>
+        <div class="inputWrapper">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            onfocus="this.value=''"
+            required
+          />
+        </div>
+        <input type="checkbox" name="terms" id="terms" required />
+        <label for="terms">I accept the terms & conditions</label>
+        <div class="inputWrapper">
+          <input type="submit" value="Go" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
